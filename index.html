@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Arte-Activo/BySan</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.8.1/slick.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="icon" type="image/jpg" href="imagen/imagen1.jpg">
+</head>
+
+<body>
+
+  <div id="wrapwrap" class="homepage">
+    <header>
+      <div class="container-nav">
+        <nav class="navbar">
+          <a href="index.html" class="brand"><h1><i>Arte - Activo</i></h1></a>
+          <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="galería.html">Galería</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <div class="button-container">
+          <a href="https://api.whatsapp.com/send?phone=573207840992&text=Hola%2C%20estoy%20interesad%40%20en%20un%20producto%F0%9F%96%8C%F0%9F%8E%A8" class="btn1" target="_blank">
+            <button onclick="redirigirWhatsApp()"><img src="imagen/whatsapp.png" alt="WhatsApp" width="50" height="50"></button>
+          </a>
+          <a href="https://www.instagram.com/arteactivo.co/" class="btn1" target="_blank">
+            <button onclick="redirigirInstagram()"><img src="imagen/instagram.png" alt="Instagram" width="50" height="50"></button>
+          </a>
+        </div>
+
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <p><strong>Misión:</strong>
+          Nuestra misión es ofrecer productos pintados a mano de alta calidad que capturen la esencia del arte y la creatividad.
+          Buscamos brindar a nuestros clientes la experiencia de disfrutar de una taza, una alcancía, un bolso, etc., productos únicos y personalizados,
+          que les permita añadir un toque de belleza y originalidad a sus momentos especiales. Nos comprometemos a utilizar técnicas y materiales
+          de primera calidad para garantizar la durabilidad y el encanto de cada uno de nuestros productos.
+        </p>
+        <p><strong>Visión:</strong>
+          Nuestra visión es convertirnos en una referencia en el mercado de los productos pintados a mano, reconocidos por nuestra excelencia artística y
+          nuestro compromiso con la satisfacción del cliente. Aspiramos a expandir nuestra presencia y llegar a un público cada vez más amplio, ofreciendo
+          una amplia gama de diseños y estilos para satisfacer diferentes gustos y preferencias. Nos esforzamos por mantenernos a la vanguardia de las tendencias
+          artísticas y ser líderes en la industria, al mismo tiempo que promovemos la apreciación del arte hecho a mano y su valor único en el mundo moderno.
+        </p>
+        <div class="fade-in">
+          <img class="image" src="imagen/Mockup1.png" alt="Imagen">
+        </div>
+      </div>
+
+      <div class="slider">
+        <div class="slide active">
+          <img src="imagen/imagenPP1.jpg" alt="Imagen 1">
+        </div>
+        <div class="slide">
+          <img src="imagen/imagenPP2.jpg" alt="Imagen 2">
+        </div>
+        <div class="slide">
+          <img src="imagen/imagenPP3.jpg" alt="Imagen 3">
+        </div>
+        <div class="slide">
+          <img src="imagen/imagenPP4.jpg" alt="Imagen 4">
+        </div>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+      </div>
+
+      <div class="button-whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=573207840992&text=Hola%2C%20estoy%20interesad%40%20en%20un%20producto%F0%9F%96%8C%F0%9F%8E%A8" class="btn1" target="_blank">
+          <button onclick="redirigirWhatsApp()">
+            <h2><i>Por compras vía WhatsApp recibe un descuento</i></h2>
+            <img src="imagen/whatsapp.png" alt="WhatsApp" width="50" height="50">
+          </button>
+        </a>
+      </div>
+
+      <div class="container">
+        <div class="fade-in">
+          <img class="image" src="imagen/Mockup2.png" alt="Imagen">
+        </div>
+        <p>
+          La empresa index.html se dedica a crear productos únicos y personalizados mediante la aplicación de técnicas
+          artísticas. Cada producto es cuidadosamente diseñado y pintado a mano, lo que le otorga un encanto y una
+          originalidad inigualables.
+          <br>
+          <br>
+          La empresa se enorgullece de ofrecer un producto de alta calidad que combina funcionalidad y arte. Cada producto es una
+          obra de arte en sí misma, con diseños detallados, colores vibrantes y motivos diversos. Ya sea para disfrutar decorando
+          espacios de tu hogar, de una taza de café por la mañana, para regalar a un ser querido o simplemente para exhibirlo como
+          una pieza decorativa, estas piezas pintadas a mano añaden un toque especial a cualquier ocasión.
+        </p>
+      </div>
+
+      <div>
+        <h1><i>"¡Descubre el encanto único de nuestros productos pintados a mano! Dale vida a tus momentos especiales con arte y creatividad."</i></h1>
+        <ul>
+          <li>Deja que tus mañanas cobren vida con nuestras tazas pintadas a mano. Una obra de arte en cada sorbo.</li>
+          <br>
+          <li>Sumérgete en el mundo de nuestros productos, cada producto cuenta una historia.</li>
+          <br>
+          <li>Explora la colección más vibrante de piezas pintadas a mano. Un deleite visual para disfrutar de cada espacio.</li>
+          <br>
+          <li>Transforma tus momentos cotidianos en algo extraordinario. Arte para tu día a día.</li>
+        </ul>
+      </div>
+      
+    </main>
+  </div>
+
+  <footer>
+    <ul class="nav-link">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="galería.html">Galería</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <p>¡Gracias por confiar en nosotros y obsequiar arte!</p>
+    <div>
+      <p>Síguenos en Instagram: <a href="https://www.instagram.com/arteactivo.co/" class="ubicar-link" target="_blank">@Arte Activo</a></p>
+      <p><br>Realiza tus pedidos al WhatsApp: <a href="https://api.whatsapp.com/send?phone=573207840992&text=Hola%2C%20estoy%20interesad%40%20en%20un%20producto%F0%9F%96%8C%F0%9F%8E%A8" class="ubicar-link" target="_blank">320-784-0992</a></p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

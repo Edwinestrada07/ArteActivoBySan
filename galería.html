@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Arte-Activo/BySan</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.8.1/slick.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="icon" type="image/jpg" href="imagen/imagen1.jpg">
+</head>
+
+<body>
+
+  <div id="wrapwrap" class="homepage">
+    <header>
+      <div class="container-nav">
+        <nav class="navbar">
+          <a href="index.html" class="brand"><h1><i>Arte - Activo</i></h1></a>
+          <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="galería.html">Galería</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <div class="button-container">
+          <a href="https://api.whatsapp.com/send?phone=573207840992&text=Hola%2C%20estoy%20interesad%40%20en%20un%20producto%F0%9F%96%8C%F0%9F%8E%A8" class="btn1" target="_blank">
+            <button onclick="redirigirWhatsApp()"><img src="imagen/whatsapp.png" alt="WhatsApp" width="50" height="50"></button></a>
+          <a href="https://www.instagram.com/arteactivo.co/" class="btn1" target="_blank">
+            <button onclick="redirigirInstagram()"><img src="imagen/instagram.png" alt="Instagram" width="50" height="50"></button></a>
+        </div>
+     </div>
+    </header>
+
+    <main>
+      <h1><i>Nuestros productos</i></h1>
+
+      <section class="banner-container">
+        <div class="banner-image">
+          <img src="imagen/slider7.jpg" alt="Imagen 7" class="image-scale-in"  onclick="showImage(this)">
+          <img src="imagen/slider8.jpg" alt="Imagen 8" class="image-scale-in" onclick="showImage(this)">
+          <img src="imagen/slider9.jpg" alt="Imagen 9" class="image-scale-in" onclick="showImage(this)">
+          <img src="imagen/slider10.jpg" alt="Imagen 10" class="image-scale-in" onclick="showImage(this)">
+          <img src="imagen/slider11.jpg" alt="Imagen 11" class="image-scale-in" onclick="showImage(this)">
+          <img src="imagen/slider12.jpg" alt="Imagen 12" class="image-scale-in" onclick="showImage(this)">
+          <img src="imagen/slider13.jpg" alt="Imagen 13" class="image-scale-in" onclick="showImage(this)">
+          <img src="imagen/slider14.jpg" alt="Imagen 14" class="image-scale-in" onclick="showImage(this)">
+          <img src="imagen/slider1.jpg" alt="Imagen 1" class="image-scale-in" onclick="showImage(this)">
+          <img src="imagen/slider2.jpg" alt="Imagen 2" class="image-scale-in" onclick="showImage(this)">
+          <img src="imagen/slider3.jpg" alt="Imagen 3" class="image-scale-in" onclick="showImage(this)">
+          <img src="imagen/slider4.jpg" alt="Imagen 4" class="image-scale-in" onclick="showImage(this)">
+          <img src="imagen/slider5.jpg" alt="Imagen 5" class="image-scale-in" onclick="showImage(this)">
+          <img src="imagen/slider6.jpg" alt="Imagen 6" class="image-scale-in" onclick="showImage(this)">
+          <img src="imagen/slider15.jpg" alt="Imagen 15" class="image-scale-in" onclick="showImage(this)">
+          <img src="imagen/slider16.jpg" alt="Imagen 16" class="image-scale-in" onclick="showImage(this)">
+          <img src="imagen/slider17.jpg" alt="Imagen 17" class="image-scale-in" onclick="showImage(this)">
+          <img src="imagen/slider18.jpg" alt="Imagen 18" class="image-scale-in" onclick="showImage(this)">
+          <img src="imagen/slider19.jpg" alt="Imagen 19" class="image-scale-in" onclick="showImage(this)">
+          <img src="imagen/slider20.jpg" alt="Imagen 20" class="image-scale-in" onclick="showImage(this)">
+          <img src="imagen/slider21.jpg" alt="Imagen 21" class="image-scale-in" onclick="showImage(this)">
+          <img src="imagen/slider22.jpg" alt="Imagen 22" class="image-scale-in" onclick="showImage(this)">
+          <img src="imagen/slider23.jpg" alt="Imagen 23" class="image-scale-in" onclick="showImage(this)">
+          <img src="imagen/slider24.jpg" alt="Imagen 24" class="image-scale-in" onclick="showImage(this)">
+          <!--Agregar mas imagenes a la galería-->
+        </div>
+
+        <div id="fullscreen-overlay">
+          <img id="fullscreen-image" alt="">
+        </div>
+
+        <div class="button-whatsapp">
+          <a href="https://api.whatsapp.com/send?phone=573207840992&text=Hola%2C%20estoy%20interesad%40%20en%20un%20producto%F0%9F%96%8C%F0%9F%8E%A8" class="btn1" target="_blank">
+            <button onclick="redirigirWhatsApp()">
+              <h2><i>Por compras vía WhatsApp recibe un descuento</i></h2>
+              <img src="imagen/whatsapp.png" alt="WhatsApp" width="50" height="50">
+            </button>
+          </a>
+        </div>
+      </section>
+       
+    </main>
+  </div>
+  
+  <footer>
+    <ul class="nav-link">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="galería.html">Galería</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+
+    <p>¡Gracias por confiar en nosotros y obsequiar arte!</p>
+ 
+    <div>
+      <p>Síguenos en Instagram: <a href="https://www.instagram.com/arteactivo.co/" class="ubicar-link" target="_blank">@Arte Activo</a></p>
+      <p><br>Realiza tus pedidos al WhatsApp: <a href="https://api.whatsapp.com/send?phone=573207840992&text=Hola%2C%20estoy%20interesad%40%20en%20un%20producto%F0%9F%96%8C%F0%9F%8E%A8" class="ubicar-link" target="_blank">320-784-0992</a></p>
+    </div>   
+  </footer>
+  
+  <script src="script.js"></script> 
+</body>
+</html>
