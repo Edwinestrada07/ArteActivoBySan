@@ -80,6 +80,35 @@
   :root {
     scroll-behavior: smooth; } }
 
+    /* CSS para pantallas de menos de 768px de ancho (tabletas y teléfonos) */
+@media (max-width: 767px) {
+  .navbar-brand {
+      text-align: center; /* Centrar el texto del logo en dispositivos móviles */
+  }
+}
+
+/* CSS para pantallas de menos de 576px de ancho (teléfonos) */
+@media (max-width: 575px) {
+  .navbar-brand {
+      font-size: 1.5rem; /* Reducir el tamaño del texto del logo en teléfonos */
+  }
+  .navbar-nav {
+      justify-content: center; /* Centrar los elementos del menú en dispositivos móviles */
+  }
+  .navbar-nav .nav-item {
+      padding: 0.5rem 1rem; /* Espaciado más pequeño entre elementos del menú en teléfonos */
+  }
+}
+
+/* CSS para imágenes en la galería en dispositivos móviles */
+@media (max-width: 767px) {
+  .img-fluid {
+      width: 100%; /* Hacer que las imágenes de la galería ocupen el ancho completo en dispositivos móviles */
+      height: auto; /* Ajustar la altura automáticamente para mantener la proporción */
+  }
+}
+
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
