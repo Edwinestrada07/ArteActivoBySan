@@ -1,197 +1,144 @@
 <!DOCTYPE html>
 <html class="h-100" lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="generator" content="Eleventy v2.0.0">
-        <meta name="HandheldFriendly" content="true">
-        <title>ArteActivoBySan</title>
-        <link rel="icon" type="img/imagen1.png" href="img/imagen1.png">
-        <link rel="stylesheet" href="css/theme.css">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Eleventy v2.0.0">
+    <meta name="HandheldFriendly" content="true">
+    <title>ArteActivoBySan</title>
+    <link rel="icon" type="img/imagen1.png" href="img/imagen1.png">
+    <link rel="stylesheet" href="css/theme.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-    <body class="bg-black text-white mt-0" data-bs-spy="scroll" data-bs-target="#navScroll" >
-        <!--Navbar-->
-        <nav id="navScroll" class="navbar navbar-dark bg-black fixed-top px-vw-5" tabindex="0">
-            <div class="container">
-                <a class="navbar-brand pe-md-4 fs-4 col-12 col-md-auto text-center" href="index.html">
-                    <span class="ms-md-1 mt-1 fw-bolder me-md-5">ArteActivoBySan</span>
-                </a>
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 list-group list-group-horizontal">
-                    <li class="nav-item">
-                        <a class="nav-link fs-5" href="#index" aria-label="Homepage">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fs-5" href="#galeria" aria-label="Galería">Galería</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fs-5" href="#contacto" aria-label="Contacto">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <!--Navbar end-->
+<body class="bg-black text-white mt-0" data-bs-spy="scroll" data-bs-target="#navScroll">
+    <!-- Navbar -->
+    <nav id="navScroll" class="navbar navbar-dark bg-black fixed-top px-3" tabindex="0">
+        <div class="container">
+            <a class="navbar-brand fs-5 text-center" href="index.html">
+                <span class="ms-2 fw-bold">ArteActivoBySan</span>
+            </a>
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 list-group list-group-horizontal">
+                <li class="nav-item">
+                    <a class="nav-link fs-5" href="#index" aria-label="Homepage">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-5" href="#galeria" aria-label="Galería">Galería</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-5" href="#contacto" aria-label="Contacto">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar end -->
 
-        <main>
-            <!--Home-->
-            <div class="container py-vh-4 position-relative mt-5 px-vw-5 text-center" id="index">
-                <div class="row d-flex align-items-center justify-content-center py-vh-5" >
-                    <div class="col-12 col-xl-10">
-                        <h1 class="display-huge mt-3 lh-1">
-                        Hacemos productos pintados a mano, capturando la esencia del arte
-                        y la creatividad
-                        </h1>
-                    </div>
-                    <div class="col-12 col-xl-8">
-                        <p class="lead text-secondary">
-                        Productos únicos y personalizados, que les permita añadir un toque
-                        de belleza y originalidad a sus momentos especiales
-                        </p>
-                    </div>
-                    <div>
-                        <a
-                        href="https://api.whatsapp.com/send?phone=573207840992&text=Hola%2C%20estoy%20interesad%40%20en%20un%20producto%F0%9F%96%8C%F0%9F%8E%A8"
-                        class="btn btn-xl btn-light"
-                        target="_blank"
-                        onclick="redirigirWhatsApp()"
-                        >
+    <main>
+        <!-- Home -->
+        <div class="container py-5 text-center" id="index">
+            <div class="row d-flex align-items-center justify-content-center py-5">
+                <div class="col-12 col-xl-10">
+                    <h1 class="display-6 mt-3 lh-1">
+                        Hacemos productos pintados a mano, capturando la esencia del arte y la creatividad
+                    </h1>
+                </div>
+                <div class="col-12 col-xl-8">
+                    <p class="lead">
+                        Productos únicos y personalizados, que les permita añadir un toque de belleza y originalidad a sus momentos especiales
+                    </p>
+                </div>
+                <div class="col-12">
+                    <a href="https://api.whatsapp.com/send?phone=573207840992&text=Hola%2C%20estoy%20interesad%40%20en%20un%20producto%F0%9F%96%8C%F0%9F%8E%A8"
+                        class="btn btn-light">
                         Contactame
-                        
-                            <img
-                            src="img/whatsapp.png"
-                            alt="WhatsApp"
-                            width="50"
-                            height="50"
-                            />
-                
+                        <img src="img/whatsapp.png" alt="WhatsApp" width="30" height="30">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Home end -->
+
+        <!-- Galery -->
+        <div class="position-relative bg-black text-white" id="galeria">
+            <div class="container-fluid px-3">
+                <div class="row d-flex align-items-center justify-content-center g-3">
+                    <div class="col-12 col-lg-6">
+                        <img src="img/slider1.jpg" alt="abstract image" class="img-fluid position-relative rounded-5 shadow" />
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <img src="img/slider20.jpg" alt="abstract image" class="img-fluid position-relative rounded-5 shadow" />
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <img src="img/slider17.jpg" alt="abstract image" class="img-fluid position-relative rounded-5 shadow" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Galery end -->
+
+        <div class="bg-dark">
+            <div class="container px-3 py-5">
+                <div class="row d-flex align-items-center">
+                    <div class="col-12 col-lg-7">
+                        <img src="img/slider21.jpg" alt="abstract image" class="img-fluid position-relative rounded-5 shadow" />
+                    </div>
+                    <div class="col-12 col-lg-5">
+                        <h3 class="pt-3">Productos Personalizados</h3>
+                        <p>
+                            La empresa ArteActivoBySan se dedica a crear productos únicos y personalizados mediante la aplicación de técnicas artísticas. Cada producto es cuidadosamente diseñado y pintado a mano, lo que le otorga un encanto y una originalidad inigualable.
+                        </p>
+
+                        <h3 class="border-top pt-3">
+                            Amamos lo que hacemos
+                        </h3>
+                        <p>
+                            La empresa se enorgullece de ofrecer un producto de alta calidad que combina funcionalidad y arte. Cada producto es una obra de arte en sí misma, con diseños detallados, colores vibrantes y motivos diversos.
+                        </p>
+                        <div>
+                            <a href="galería.html" class="btn btn-light">
+                                Visitar Galería
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Galery end -->
+    </main>
+
+    <footer class="bg-black py-2" id="contacto">
+        <div class="container py-2 text-secondary">
+            <div class="row">
+                <div class="col-lg-5">
+                    <a class="navbar-brand fs-5" href="index.html">
+                        <span class="ms-2 fw-bold">ArteActivoBySan</span>
+                    </a>
+                    <h5 class="mb-3">Síguenos en nuestras redes sociales</h5>
+                    <div class="d-flex justify-content-center justify-content-lg-start">
+                        <a href="https://api.whatsapp.com/send?phone=573207840992&text=Hola%2C%20estoy%20interesad%40%20en%20un%20producto%F0%9F%96%8C%F0%9F%8E%A8" class="btn btn-light me-3" target="_blank">
+                            <img src="img/whatsapp.png" alt="WhatsApp" width="30" height="30" class="me-2"> WhatsApp
+                        </a>
+                        <a href="https://www.instagram.com/arteactivo.co/" class="btn btn-light" target="_blank">
+                            <img src="img/instagram.png" alt="Instagram" width="30" height="30" class="me-2"> Instagram
                         </a>
                     </div>
                 </div>
             </div>
-            <!--Home end-->
+        </div>
+        <div class="container py-2 text-center small border-top border-secondary">
+            Realizado por:
+            <a href="https://www.linkedin.com/in/edwin-andr%C3%A9s-estrada-mu%C3%B1oz-086a90266/" class="link-fancy link-fancy-light" target="_blank">Edwin Estrada</a>
+        </div>
+    </footer>
 
-            <!--galery-->
-            <div class="w-100 position-relative bg-black text-white" id="galeria">
-                <div class="container-fluid px-vw-5">
-                
-                    <div class="row d-flex align-items-center position-relative justify-content-center px-0 g-5" >
-                        <div class="col-12 col-lg-6">
-                            <img
-                                src="img/slider1.jpg"
-                                width="2280"
-                                height="1732"
-                                alt="abstract image"
-                                class="img-fluid position-relative rounded-5 shadow"
-                                data-aos="fade-up"
-                            />
-                        </div>
-
-                        <div class="col-12 col-md-6 col-lg-3">
-                            <img
-                                src="img/slider20.jpg"
-                                width="1116"
-                                height="1578"
-                                alt="abstract image"
-                                class="img-fluid position-relative rounded-5 shadow"
-                                data-aos="fade-up"
-                                data-aos-duration="2000"
-                            />
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-3">
-                            <img
-                                src="img/slider17.jpg"
-                                width="1116"
-                                height="848"
-                                alt="abstract image"
-                                class="img-fluid position-relative rounded-5 shadow"
-                                data-aos="fade-up"
-                                data-aos-duration="3000"
-                            />
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bg-dark">
-                <div class="container px-vw-5 py-vh-5">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-12 col-lg-7 text-lg-end" data-aos="fade-right">
-                            <img
-                                src="img/slider21.jpg"
-                                width="1116"
-                                height="848"
-                                alt="abstract image"
-                                class="img-fluid position-relative rounded-5 shadow"
-                                data-aos="fade-up"
-                                data-aos-duration="3000"
-                            />
-                        </div>
-                        <div class="col-12 col-lg-5" data-aos="fade-left">
-                            <h3 class="pt-5">Productos Personalizados</h3>
-                            <p class="text-secondary">
-                                La empresa <span class="ms-md-1 mt-1 fw-bolder">ArteActivoBySan</span> se dedica a crear productos 
-                                únicos y personalizados mediante la aplicación de técnicas artísticas. Cada producto es cuidadosamente 
-                                diseñado y pintado a mano, lo que le otorga un encanto y una originalidad inigualable.<br /> 
-                            </p>
-
-                            <h3 class="border-top border-secondary pt-5 mt-5">
-                                Amamos lo que hacemos
-                            </h3>
-                            <p class="text-secondary">
-                                La empresa se enorgullece de ofrecer un producto de alta calidad que combina funcionalidad y arte. Cada 
-                                producto es una obra de arte en sí misma, con diseños detallados, colores vibrantes y motivos diversos.<br />
-                                <div>
-                                    <a
-                                        href="galería.html"
-                                        class="btn btn-xl btn-light"
-                                    >
-                                        Visitar Galería
-                                    </a>
-                                </div>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--galery end-->   
-        </main>
-
-        <footer class="bg-black" id="contacto">
-            <div class="container py-vh-2 text-secondary fw-lighter">
-                <div class="row">
-                    <div class="col-lg-5">
-                        <a class="navbar-brand pe-md-4 fs-4 col-12 col-md-auto text-center" href="index.html" >
-                            <span class="ms-md-1 mt-1 fw-bolder me-md-5">ArteActivoBySan</span>
-                        </a>
-                        <h5 class="mb-4">Síguenos en nuestras redes sociales</h5>
-                        <div class="d-flex justify-content-center justify-content-lg-start">
-                            <a href="https://api.whatsapp.com/send?phone=573207840992&text=Hola%2C%20estoy%20interesad%40%20en%20un%20producto%F0%9F%96%8C%F0%9F%8E%A8" class="btn btn-light me-3" target="_blank" onclick="redirigirWhatsApp()">
-                                <img src="img/whatsapp.png" alt="WhatsApp" width="30" height="30" class="me-2"> WhatsApp
-                            </a>
-                            <a href="https://www.instagram.com/arteactivo.co/" class="btn btn-light" target="_blank" onclick="redirigirInstagram()">
-                                <img src="img/instagram.png" alt="Instagram" width="30" height="30" class="me-2"> Instagram
-                            </a>
-                        </div>                        
-                    </div>
-                </div>
-            </div>
-            <div class="container text-center small py-vh-2 border-top border-dark">
-                Realizado por:
-                <a
-                href="https://www.linkedin.com/in/edwin-andr%C3%A9s-estrada-mu%C3%B1oz-086a90266/"
-                class="link-fancy link-fancy-light"
-                target="_blank"
-                >Edwin Estrada</a
-                >
-            </div>
-        </footer>
-
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/aos.js"></script>
-        <script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
         AOS.init({
-            duration: 800, // values from 0 to 3000, with step 50ms
+            duration: 800
         })
-        </script>
-    </body>
+    </script>
+</body>
+
 </html>
+
