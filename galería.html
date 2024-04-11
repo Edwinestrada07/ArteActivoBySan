@@ -9,6 +9,35 @@
     <link rel="icon" type="img/imagen1.png" href="img/imagen1.png">
     <link rel="stylesheet" href="css/theme.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Estilos adicionales para dispositivos móviles */
+        @media (max-width: 768px) {
+            /* Navbar */
+            .navbar-brand {
+                font-size: 1.5rem; /* Reducir tamaño de la marca */
+            }
+
+            .navbar-nav .nav-link {
+                font-size: 1rem; /* Reducir tamaño de los enlaces */
+            }
+
+            .navbar-nav {
+                flex-direction: column; /* Alinear elementos verticalmente */
+            }
+
+            .navbar-collapse {
+                margin-top: 1rem; /* Agregar espacio arriba de los enlaces */
+                display: none; /* Ocultar el menú por defecto */
+            }
+
+            .navbar-toggler {
+                order: -1; /* Mover el botón de hamburguesa al inicio */
+            }
+        }
+
+        /* Contenido principal */
+        /* Agregar cualquier estilo adicional para dispositivos móviles aquí */
+    </style>
 </head>
 
 <body>
@@ -17,17 +46,23 @@
             <a class="navbar-brand fs-5 text-center" href="index.html">
                 <span class="ms-2 fw-bold">ArteActivoBySan</span>
             </a>
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 list-group list-group-horizontal">
-                <li class="nav-item">
-                    <a class="nav-link fs-5" href="index.html" aria-label="Homepage">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fs-5" href="#galeria" aria-label="Galería">Galería</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fs-5" href="#contacto" aria-label="Contacto">Contacto</a>
-                </li>
-            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 list-group list-group-horizontal">
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="index.html" aria-label="Homepage">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="#galeria" aria-label="Galería">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="#contacto" aria-label="Contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -117,6 +152,18 @@
     <script>
         AOS.init({
             duration: 800
+        })
+
+        // JavaScript para mostrar/ocultar el menú desplegable
+        var navbarCollapse = document.querySelector('.navbar-collapse');
+        var navbarToggler = document.querySelector('.navbar-toggler');
+
+        navbarToggler.addEventListener('click', function () {
+            if (navbarCollapse.style.display === 'none') {
+                navbarCollapse.style.display = 'block'
+            } else {
+                navbarCollapse.style.display = 'none'
+            }
         })
     </script>
 </body>
